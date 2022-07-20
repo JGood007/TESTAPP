@@ -1,0 +1,13 @@
+﻿@model Employee
+<form method="post" asp-controller="Home" asp-action="Update" enctype="multipart/form-data">
+    <div>
+        <input type="hidden" value="@Model.Id" />
+    </div>
+
+    <partial name="_EmpMaintenance" model="Model" />
+
+    <div>
+        <input type="submit" class="btn btn-primary" />
+    </div>
+
+</form>
